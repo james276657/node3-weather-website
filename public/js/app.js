@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = data.location
-                messageTwo.textContent = (data.forecast.currentcondition + ',  Temp ' + data.forecast.temperature + ' degrees,  Feels like ' +  data.forecast.feelslike + ' degrees')
+                messageTwo.textContent = (data.forecast.currentcondition + ',  Temp ' + data.forecast.temperature + ' degrees,  Feels like ' +  data.forecast.feelslike + ' degrees,  Wind speed ' + data.forecast.windspeed + ' mph.' )
             }
         })
     })
